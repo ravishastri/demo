@@ -1,0 +1,15 @@
+{
+	"name": "AzureDatabricks1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2309255218477007.7.azuredatabricks.net",
+			"newClusterNodeType": "Standard_NC12",
+			"newClusterNumOfWorker": "1",
+			"newClusterVersion": "5.5.x-gpu-scala2.11",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRJR0lQVUxTRS1BREYxX2Q4MWE5NjYwLTljMWUtNGMyOS04NDE3LTIyZGRhNDQzMmU3YyINCn0="
+		}
+	}
+}
