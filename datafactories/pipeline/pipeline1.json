@@ -36,7 +36,52 @@
 							"type": "ParquetWriteSettings"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['RecordNumber']"
+								},
+								"sink": {
+									"name": "RecordNumber"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Zipcode']"
+								},
+								"sink": {
+									"name": "Zipcode"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ZipCodeType']"
+								},
+								"sink": {
+									"name": "ZipCodeType"
+								}
+							},
+							{
+								"source": {
+									"path": "$['City']"
+								},
+								"sink": {
+									"name": "City"
+								}
+							},
+							{
+								"source": {
+									"path": "$['State']"
+								},
+								"sink": {
+									"name": "State"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
