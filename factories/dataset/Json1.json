@@ -1,0 +1,38 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "multiline-zipcode.json",
+				"fileSystem": "trackersrawdata"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"RecordNumber": {
+					"type": "integer"
+				},
+				"Zipcode": {
+					"type": "integer"
+				},
+				"ZipCodeType": {
+					"type": "string"
+				},
+				"City": {
+					"type": "string"
+				},
+				"State": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
