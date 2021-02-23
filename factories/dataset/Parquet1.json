@@ -1,0 +1,40 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "fitnesstrackerdataschematized"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "RecordNumber",
+				"type": "INT64"
+			},
+			{
+				"name": "Zipcode",
+				"type": "INT64"
+			},
+			{
+				"name": "ZipCodeType",
+				"type": "UTF8"
+			},
+			{
+				"name": "City",
+				"type": "UTF8"
+			},
+			{
+				"name": "State",
+				"type": "UTF8"
+			}
+		]
+	}
+}
